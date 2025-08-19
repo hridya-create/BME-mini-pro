@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f9f9f9;
+
+  /* Sticky footer setup */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  background-color: #2a5580;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+.image-container {
+  position: relative;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.hotspot {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
+}
+
+.hotspot:hover {
+  transform: scale(1.2);
+}
+
+#papersContainer {
+  margin: 30px auto;
+  width: 80%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#papersContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#papersContainer li {
+  margin-bottom: 0.8rem;
+}
+
+#papersContainer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#papersContainer a:hover {
+  text-decoration: underline;
+}
+
+
+main, #papersContainer, .image-container, header {
+  flex-shrink: 0;
+}
+
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative; 
+}
+.image-container img {
+  width: 73%;
+  height: 100%;
+  max-height: 420px; /* Reduce image height safely */
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
